@@ -10,7 +10,7 @@ module.exports = {
 
         const { lista_id, title } = req.body;
 
-        const [result] = await connection.query(`INSERT INTO tarefa VALUES (DEFAULT, '${lista_id}', '${title}', 'A iniciar', NOW(), NOW())`);
+        const [result] = await connection.query(`INSERT INTO tarefa VALUES (DEFAULT, '${lista_id}', '${title}', 'Em andamento', NOW(), NOW())`);
 
         if(result > 0)
             response.success = true;

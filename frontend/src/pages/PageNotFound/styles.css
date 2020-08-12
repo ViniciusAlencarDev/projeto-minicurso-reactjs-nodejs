@@ -1,0 +1,9 @@
+#container-page-not-found {
+    text-align: center;
+}
+
+#container-page-not-found h1 {
+    font-size: 30pt;
+    color: gray;
+    text-shadow: 1px 1px 1px black;
+}
